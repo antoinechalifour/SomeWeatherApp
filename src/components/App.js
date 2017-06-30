@@ -4,7 +4,6 @@ import Weather from './Weather'
 import Geolocation from './Geolocation'
 
 const Background = styled.div`
-  background: #3F51B5;
   color: #fff;
   min-height: 100vh;
   font-family: 'Josefin Sans', sans-serif;

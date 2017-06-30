@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components'
 import WorldIcon from 'react-icons/lib/ti/world'
 
 const Container = styled.div`
+  background: #3F51B5;
   min-height: 100vh;
   display: flex;
   align-items: center;

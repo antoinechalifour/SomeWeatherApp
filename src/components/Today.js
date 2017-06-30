@@ -58,7 +58,18 @@ const Background = styled(WeatherBackground)`
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: .3;
+  z-index: -1;
+`
+
+const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #3F51B5;
+  opacity: .75;
+  z-index: -1;
 `
 
 const Content = styled.div`
@@ -85,6 +96,7 @@ const Today = ({ latitude, longitude }) => (
       return (
         <Container>
           <Background name={weather.main} />
+          <Overlay />
           <Content>
             <City>{city}</City>
             <Main>
