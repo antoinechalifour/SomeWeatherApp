@@ -5,7 +5,6 @@ import Geolocation from './Geolocation'
 
 const Background = styled.div`
   color: #fff;
-  min-height: 100vh;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 0.08rem;
   font-size: 18px;
