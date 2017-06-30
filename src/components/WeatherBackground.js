@@ -1,11 +1,4 @@
 import React from 'react'
-import Cloudy from 'react-icons/lib/ti/weather-cloudy'
-import PartlySunny from 'react-icons/lib/ti/weather-partly-sunny'
-import Snow from 'react-icons/lib/ti/weather-snow'
-import Rain from 'react-icons/lib/ti/weather-shower'
-import Storm from 'react-icons/lib/ti/weather-stormy'
-import Sun from 'react-icons/lib/ti/weather-sunny'
-import Wind from 'react-icons/lib/ti/weather-windy-cloudy'
 
 const WeatherBackground = ({ className, name }) => {
   let src = null
