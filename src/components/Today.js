@@ -10,7 +10,6 @@ import WeatherBackground from './WeatherBackground'
 const Container = styled.div`
   text-align: center;
   padding: 32px 16px;
-  position: relative;
 `
 
 const City = styled.div`
@@ -58,20 +57,10 @@ const Background = styled(WeatherBackground)`
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: .4;
+  opacity: .3;
 `
 
 const Content = styled.div`
-  position: relative;
-`
-
-const Transition = styled.div`
-  height: 12px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #3F51B5);
-  margin-left: -16px;
-  margin-right: -16px;
-  margin-bottom: -32px;
-  margin-top: 16px;
   position: relative;
 `
 
@@ -122,7 +111,6 @@ const Today = ({ latitude, longitude }) => (
               </DetailItem>
             </Detail>
           </Content>
-          <Transition />
         </Container>
       )
     }}
