@@ -14,6 +14,12 @@ const WeatherIcon = ({ name }) => {
 
     case 'Rain':
       return <Rain />
+
+    case 'Clear':
+      return <PartlySunny />
+
+    default:
+      throw new Error(`No provided icon for weather ${name}`)
   }
 }
 
