@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import moment from 'moment'
 import Fetch from './Fetch'
 import WeatherIcon from './WeatherIcon'
+import { formatTemperature } from '../utils'
 
 const Container = styled.div`
   padding: 16px 8px;
@@ -99,8 +100,8 @@ const Forecast = ({ longitude, latitude }) => (
               <ForecastDay>
                 {moment(day.dt_txt).format('dddd')}
               </ForecastDay>
-              <span>{day.max}°</span>
-              <TempMin>{day.min}°</TempMin>
+              <span>{formatTemperature(day.max)}°</span>
+              <TempMin>{formatTemperature(day.min)}°</TempMin>
             </ForecastItem>
           ))}
         </Container>

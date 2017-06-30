@@ -6,6 +6,7 @@ import Wind from 'react-icons/lib/ti/weather-windy'
 import Fetch from './Fetch'
 import WeatherIcon from './WeatherIcon'
 import WeatherBackground from './WeatherBackground'
+import { formatTemperature } from '../utils'
 
 const Container = styled.div`
   text-align: center;
@@ -88,7 +89,7 @@ const Today = ({ latitude, longitude }) => (
             <City>{city}</City>
             <Main>
               <Temp>
-                {main.temp}°
+                {formatTemperature(main.temp)}°
                 <WeatherIcon name={weather.main} />
               </Temp>
               <div>{weather.main}</div>
@@ -101,8 +102,8 @@ const Today = ({ latitude, longitude }) => (
               <DetailItem>
                 <Icon><Thermometer /></Icon>
                 <div>
-                  <span>{main.temp_max}°</span>
-                  <TempMin>{main.temp_min}°</TempMin>
+                  <span>{formatTemperature(main.temp_max)}°</span>
+                  <TempMin>{formatTemperature(main.temp_min)}°</TempMin>
                 </div>
               </DetailItem>
               <DetailItem>
