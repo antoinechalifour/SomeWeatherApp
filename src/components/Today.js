@@ -78,7 +78,7 @@ const Content = styled.div`
 
 const Today = ({ latitude, longitude }) => (
   <Fetch
-    url='http://api.openweathermap.org/data/2.5/weather'
+    url='/data/2.5/weather'
     qs={{
       lat: latitude,
       lon: longitude,

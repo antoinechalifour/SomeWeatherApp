@@ -81,7 +81,7 @@ const extractDayInformation = day => {
 
 const Forecast = ({ longitude, latitude }) => (
   <Fetch
-    url='http://api.openweathermap.org/data/2.5/forecast'
+    url='/data/2.5/forecast'
     qs={{
       lat: latitude,
       lon: longitude,

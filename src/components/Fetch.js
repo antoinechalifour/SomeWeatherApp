@@ -1,6 +1,6 @@
 import { stringify } from 'qs'
 import { Component } from 'react'
-import { APP_ID } from '../constants'
+import { APP_ID, API_BASE } from '../constants'
 
 class Fetch extends Component {
   constructor (props) {
@@ -10,7 +10,7 @@ class Fetch extends Component {
   }
 
   componentDidMount () {
-    let url = this.props.url
+    let url = `${API_BASE}${this.props.url}`
 
     if (this.props.qs) {
       const qs = {
